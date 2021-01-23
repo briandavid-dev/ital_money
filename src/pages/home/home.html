@@ -1,14 +1,41 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
+
+<ion-content padding class="fondoTotal" color="grisfondo">
+    <ion-row style="height: 70px;"></ion-row>
+
+    <div text-center >
+      <img height="100" src="assets/imgs/logo_mini.svg" class="logoImgRedondo" />
+    </div>
+    <ion-row style="height:30px;"></ion-row>
+
+
+
+    <ion-list>
+
+        <ion-item class="roundedInput">
+          <ion-input type="text" value="" placeholder="Documento de identidad" clearInput></ion-input>
+        </ion-item>
+        <ion-row style="height:5px;"></ion-row>
+
+        <ion-item class="roundedInput">
+            <ion-input type="password" value="" placeholder="Contraseña" clearInput></ion-input>
+          </ion-item>
+        <ion-row style="height:5px;"></ion-row>
+
+          <button ion-button round full 
+          color="colorPrimaryButtom" 
+          class="letraMinusculaNormal" 
+          (click)="goToPageGestionDivisas1()">Iniciar Sesión</button>
+
+          
+      
+      </ion-list>
+
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+      <a href="#">¿Olvidaste tu contraseña?</a>
+      <ion-row style="height: 10px;"></ion-row>
+      <span ion-text color="">¿Aún no tienes cuenta con nosotros?</span><br>
+      <a href="#" (click)="goToPageRegistro()">Regístrate aquí</a>
   </p>
 </ion-content>

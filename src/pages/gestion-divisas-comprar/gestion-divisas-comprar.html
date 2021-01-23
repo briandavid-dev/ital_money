@@ -1,0 +1,131 @@
+<ion-header>
+        <ion-navbar color="grisfondo">
+            
+            <ion-title >
+                <img height="20" src="assets/imgs/logo_escrito.svg"/>
+            </ion-title>
+            <ion-buttons end>
+              <button ion-button icon-only ><ion-icon name="md-more"></ion-icon></button>
+            </ion-buttons>
+        </ion-navbar>
+    </ion-header>
+    <ion-content padding class="fondoTotal">
+        
+            
+            <ion-grid>
+                <h3 text-center class="letraColorTextos">Sistema de gestión de divisas</h3>
+                <ion-row style="height:10px;"></ion-row>
+                <ion-col col-12>
+                    <strong class="letraColorTextos">
+                        Comprar divisas
+                    </strong>
+                </ion-col>
+                <ion-row style="height:8px;"></ion-row>
+
+                <ion-col col-12>
+                    <ion-item class="roundedInput">
+                        <ion-label>Divisa</ion-label>
+                        <ion-select [(ngModel)]="selectDivisa">
+                            <ion-option value="USD">USD</ion-option>
+                            <ion-option value="YEN">YEN</ion-option>
+                            <ion-option value="BIT">BIT</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-item class="roundedInput">
+                        <ion-label>Instrumento</ion-label>
+                        <ion-select [(ngModel)]="selectInstrumento">
+                            <ion-option value="Efectivo">Efectivo</ion-option>
+                            <ion-option value="Corriente">Corriente</ion-option>
+                            <ion-option value="Ahorros">Ahorros</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-item class="roundedInput">
+                        <ion-label >Monto a comprar</ion-label>
+                        <ion-input type="number" value="" [(ngModel)]="inputMontoComprar"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-item class="roundedInput">
+                        <ion-label>Sucursal</ion-label>
+                        <ion-select [(ngModel)]="selectSucursal">
+                            <ion-option value="u">Caracas</ion-option>
+                            <ion-option value="y">Maracay</ion-option>
+                            <ion-option value="b">Puerto La Cruz</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-item class="roundedInput">
+                        <ion-label>Método de pago</ion-label>
+                        <ion-select [(ngModel)]="selectMetodoPago">
+                            <ion-option value="u">Debito</ion-option>
+                            <ion-option value="y">Credito</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-item class="roundedInput">
+                        <ion-label>Origen de los fondos</ion-label>
+                        <ion-select [(ngModel)]="selectOrigenFondos">
+                            <ion-option value="u">Ahorros</ion-option>
+                            <ion-option value="y">Trabajo</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-item class="roundedInput">
+                        <ion-label>Destino de los fondos</ion-label>
+                        <ion-select [(ngModel)]="selectDestinoFondos">
+                            <ion-option value="FF">Familia</ion-option>
+                            <ion-option value="AA">Ahorros</ion-option>
+                            <ion-option value="TT">Trabajo</ion-option>
+                            <ion-option value="II">Inversiones</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+
+
+                <ion-row style="height:10px;"></ion-row>
+
+                <ion-row>
+                    <ion-col col-2>
+                        <ion-item style="background: transparent">
+                            <ion-checkbox [(ngModel)]="checkAceptoTerminos"></ion-checkbox>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col col-8>
+                        <span class="letraColorTextos">
+                            He leído y acepto los <a href="#">términos y condiciones</a>
+                        </span>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row style="height:10px;"></ion-row>
+                
+                <button ion-button round full 
+                color="colorPrimaryButtom" 
+                class="letraMinusculaNormal" 
+                (click)="goToPageGestionDivisasComprarConfirmarDatos()">Siguiente</button>
+                
+    
+                <ion-row style="height: 30px;"></ion-row>
+
+    
+                
+    
+    
+    
+                
+                
+            </ion-grid>
+            
+            
+    
+            
+    
+    </ion-content>
+    

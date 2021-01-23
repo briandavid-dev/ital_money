@@ -1,0 +1,74 @@
+<ion-header>
+        <ion-navbar color="grisfondo">
+            
+            <ion-title >
+                <img height="20" src="assets/imgs/logo_escrito.svg"/>
+            </ion-title>
+            <ion-buttons end>
+              <button ion-button icon-only ><ion-icon name="md-more"></ion-icon></button>
+            </ion-buttons>
+        </ion-navbar>
+    </ion-header>
+    <ion-content padding class="fondoTotal">
+        
+            
+            <ion-grid class="letraColorTextos">
+                <h3 text-center  >Confirmar datos</h3>
+                <ion-row style="height:10px;"></ion-row>
+                <ion-col col-12>
+                    Divisa: {{textDivisa}}
+                </ion-col>
+                <ion-col col-12>
+                    Instrumento: XXX
+                </ion-col>
+                <ion-col col-12>
+                    Monto: XXX
+                </ion-col>
+                <ion-col col-12>
+                    Agencia: XXX
+                </ion-col>
+                <ion-col col-12>
+                    Método de pago: XXX
+                </ion-col>
+                <ion-col col-12>
+                    Origen de los fondos: XXX
+                </ion-col>
+                <ion-row style="height:8px;"></ion-row>
+
+                <ion-col col-12>
+                    <strong>
+                        Monto a pagar sin comisiones: 5000 Bs.S. <br>
+                        Tasa actual sin comisiones:  5000 Bs.S. x USD *
+                    </strong>
+                    <br><br>
+                    * La tasa puede variar el día de la cita
+                </ion-col>
+                <ion-row style="height:20px;"></ion-row>
+    
+                <ion-row>
+                    <ion-col col-6>                            
+                        <button ion-button round full
+                        color="colorPrimaryButtom" 
+                        class="letraMinusculaNormal" 
+                        (click)="goToPageGestionDivisasComprar()">Editar</button>
+                    </ion-col>
+                    <ion-col col-6>        
+                        <button ion-button round full
+                        color="colorPrimaryButtom" 
+                        class="letraMinusculaNormal" 
+                        (click)="goToPageGestionDivisasComprarProcesoCompleto()">Aceptar</button>
+                    </ion-col>
+                </ion-row>
+                
+                
+            </ion-grid>
+
+            
+            
+
+
+    
+            
+    
+    </ion-content>
+    

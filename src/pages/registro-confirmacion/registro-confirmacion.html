@@ -1,0 +1,65 @@
+<ion-header>
+        <ion-navbar color="grisfondo">
+            
+            <ion-title >
+                <img height="20" src="assets/imgs/logo_escrito.svg"/>
+            </ion-title>
+        </ion-navbar>
+    </ion-header>
+
+
+    <ion-content padding class="fondoTotal">
+       
+            
+            <ion-grid>
+                <h3 text-center class="letraColorTextos">Confirmación de cuenta</h3>
+                <p text-center class="letraColorTextos">Por favor ingresar el código de seguridad que se le envió por mensaje de texto o correo electrónico</p>
+                
+                <ion-row style="height:20px;"></ion-row>
+                <ion-row>
+                    <ion-col col-12>
+                        <span class="letraColorTextos">
+                            Esriba el código enviado
+                        </span>
+                        <ion-row style="height:5px;"></ion-row>
+                        <ion-item class="roundedInput">
+                            <ion-input type="text" value="" [(ngModel)]="inputCodigo1"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <!--
+                    <ion-col col-12>
+                        <span class="letraColorTextos">
+                            Código enviado a su correo electronico
+                        </span>
+                        <ion-row style="height:5px;"></ion-row>
+                        <ion-item class="roundedInput">
+                            <ion-label fixed>Ingrese el código</ion-label>
+                            <ion-input type="text" value="" [(ngModel)]="inputCodigo2"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    -->
+                </ion-row>
+    
+                <ion-row style="height: 30px;"></ion-row>
+    
+                
+    
+    
+    
+                
+    
+                <ion-row style="height:10px;"></ion-row>
+                <button ion-button round full 
+                color="colorPrimaryButtom" 
+                class="letraMinusculaNormal" 
+                (click)="goToPageRegistroConfirmacionExitosa()">Siguiente</button>
+                
+            </ion-grid>
+            
+            
+    
+            
+    
+    </ion-content>
+    
+    

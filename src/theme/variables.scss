@@ -22,7 +22,59 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
+.fondoTotal {
+    background: #F5F5F5 !important; // color de fondo general
+}
 
+.roundedInput {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.letraMinusculaNormal {
+    text-transform: none !important;
+    font-weight: normal !important;
+}
+
+.letraBlanca {
+    color: #f4f4f4;
+}
+
+.letraColorTextos {
+    color: #343A40;
+}
+
+.tableHeader {
+    background: #171796;
+    color: #f4f4f4;
+}
+ 
+
+.tableHeaderOddImpar {
+    /*background: #707070;
+    opacity: 0.3;
+    filter: alpha(opacity=30);*/
+    color: #343A40;
+    background: #9CCCFF;
+}
+
+.tableHeaderEvenPar {
+    /*background: #707070;
+    opacity: 0.5;
+    filter: alpha(opacity=50);*/
+    color: #343A40;
+    background: #5CA9FC;
+}
+
+.tableSizeIcons1 {
+    font-size: 1.4em;
+}
+
+
+.labelFormularios {
+    margin: 0px 8px 5px 0 !important;
+}
 
 
 // Named Color Variables
@@ -38,7 +90,11 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  grisfondo:  #171796, // fondo de la barra superior
+  colorPrimaryButtom : #171796, // background de botones
+  italColorIconoListo : #11ff00 // color del icono LISTO
+  
 );
 
 

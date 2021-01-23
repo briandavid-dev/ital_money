@@ -1,0 +1,254 @@
+<ion-header>
+    <ion-navbar color="grisfondo">
+        
+        <ion-title >
+            <img height="20" src="assets/imgs/logo_escrito.svg"/>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="fondoTotal">
+    <ion-list>
+        
+        <ion-grid>
+            <h4 class="letraColorTextos">Datos personales</h4>
+            <ion-row>
+                <ion-col col-4>
+                    <ion-label class="letraColorTextos labelFormularios">V / E</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-select [(ngModel)]="selectTipoNacionalidad">
+                            <ion-option value="v">V</ion-option>
+                            <ion-option value="e">E</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-8>
+                    <ion-label class="letraColorTextos labelFormularios">Documento de Identidad</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="text" value=""></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios"  >Primer nombre</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="text" value=""></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                        <ion-label class="letraColorTextos labelFormularios" >Segundo nombre</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="text" value=""></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Primer Apellido</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="text" value=""></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Segundo Apellido</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="text" value=""></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios">Genero</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectGenero">
+                            <ion-option value="h">Hombre</ion-option>
+                            <ion-option value="m">Mujer</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios">Estado Civil</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectEstadoCivil">
+                            <ion-option value="s">Soltero</ion-option>
+                            <ion-option value="c">Casado</ion-option>
+                            <ion-option value="v">Viudo</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios">País de nacimiento</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectPaisNacimiento">
+                            <ion-option value="1">Venezuela</ion-option>
+                            <ion-option value="2">Inglaterra</ion-option>
+                            <ion-option value="3">Alemania</ion-option>
+                            <ion-option value="4">Chile</ion-option>
+                            <ion-option value="5">Suiza</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios">Ciudad de nacimiento</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectCiudadNacimiento">
+                            <ion-option value="v">Caracas</ion-option>
+                            <ion-option value="e">Valencia</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios">Fecha de nacimiento</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectFechaNacimiento">
+                            <ion-option value="v">Venezolano</ion-option>
+                            <ion-option value="e">Extrangero</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios">Ocupacion</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectOcupacion">
+                            <ion-option value="v">Venezolano</ion-option>
+                            <ion-option value="e">Extrangero</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-5>
+                    <ion-label class="letraColorTextos labelFormularios">Código</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectCodigoTelefonoCelular  ">
+                            <ion-option value="0414">0414</ion-option>
+                            <ion-option value="0416">0416</ion-option>
+                            <ion-option value="0412">0412</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-7>
+                    <ion-label class="letraColorTextos labelFormularios" >Teléfono celular</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="number" value="" [(ngModel)]="inputTelefonoCelular"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Correo Electrónico</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="email" value="" [(ngModel)]="inputEmail"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Confirmar Correo Electrónico</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="email" value="" [(ngModel)]="inputEmailConfirmacion"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            
+            <h4 class="letraColorTextos">Dirección de habitación</h4>
+            <ion-row>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios">Estado</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectEstado">
+                            <ion-option value="v">Distrito Capital</ion-option>
+                            <ion-option value="e">Amazonas</ion-option>
+                            <ion-option value="f">Miranda</ion-option>
+                            <ion-option value="j">Yaracuy</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Código Zip</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="text" value="" [(ngModel)]="inputCodigoZip"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Dirección</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-textarea placeholder="" [(ngModel)]="inputDireccion"></ion-textarea>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-5>
+                    <ion-label class="letraColorTextos labelFormularios">Código</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-label></ion-label>
+                        <ion-select [(ngModel)]="selectCodigoTelefonoLocal">
+                            <ion-option value="0212">0212</ion-option>
+                            <ion-option value="0414">0414</ion-option>
+                            <ion-option value="0416">0416</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-7>
+                    <ion-label class="letraColorTextos labelFormularios" >Télefono local</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="number" value="" [(ngModel)]="inputTelefonoLocal"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <h4 class="letraColorTextos ">Contraseña personal</h4>
+            <ion-row>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Contraseña</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="password" value="" [(ngModel)]="inputContrasena"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-label class="letraColorTextos labelFormularios" >Repetir contraseña</ion-label>
+                    <ion-item class="roundedInput">
+                        <ion-input type="password" value="" [(ngModel)]="inputContrasenaConfirmar"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row style="height: 30px;"></ion-row>
+
+            <ion-row>
+                <ion-col col-2>
+                    <ion-item style="background: transparent">
+                        <ion-checkbox [(ngModel)]="checkAceptoTerminos"></ion-checkbox>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-8>
+                    <span class="letraColorTextos labelFormularios">
+                        He leído y acepto los <a href="#">términos y condiciones</a>
+                    </span>
+                </ion-col>
+            </ion-row>
+            
+
+
+
+            
+
+            <ion-row style="height:10px;"></ion-row>
+            <button ion-button round full 
+            color="colorPrimaryButtom" 
+            class="letraMinusculaNormal" 
+            (click)="goToPageRegistroConfirmacion()">Siguiente</button>
+            
+        </ion-grid>
+        
+        
+
+        
+
+        
+        <ion-row style="height:5px;"></ion-row>
+    
+    </ion-list>
+</ion-content>
+
